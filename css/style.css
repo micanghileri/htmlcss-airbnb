@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+header {
+    height: 90px;
+    width: 100vw;
+    background-color: #efefef;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    position: relative;
+}
+
+#logo img {
+    width: 170px;
+    vertical-align: middle;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+}
+
+ul li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    color: black;
+    line-height: 90px;
+}
