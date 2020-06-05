@@ -14,7 +14,7 @@ header {
     position: fixed;
     top: 0;
     text-align: center;
-    position: relative;
+    z-index: 9999;
 }
 
 #logo img {
@@ -50,33 +50,24 @@ ul li {
     color: grey;
 }
 
-/* titolo */
-
-h2 {
-    font-size: 45px;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-bottom: 20px;
-    color: grey;
-    text-align: left;
-}
-
 /* stilizzazione schede moderne */
 
 #area_schede {
     text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
 }
 
-.scheda_citta {
-    width: 300px;
-    height: 220px;
-    background-color: #f7f7f7;
-    border-radius: 13px;
-    border: 2px solid #ded9d9;
-    margin: 10px;
-    display: inline-block;
-    position: relative;
+/* titolo */
+
+h2 {
+    font-size: 45px;
+    padding-left: 50px;
+    color: grey;
+    text-align: left;
 }
+
 
 h3 {
     position: absolute;
@@ -87,6 +78,17 @@ h3 {
     z-index: 3;
     color: white;
     font-size: 35px;
+}
+
+.scheda_citta {
+    width: 340px;
+    height: 220px;
+    background-color: #f7f7f7;
+    border-radius: 13px;
+    border: 2px solid #ded9d9;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
 }
 
 .overlay {
@@ -106,14 +108,14 @@ h3 {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     border-radius: 11px;
     z-index: 1;
 }
 
 .scheda_citta:hover {
-    border: 2px solid grey;
+    border: 2px solid #e8e8e8;
 }
 
 .scheda_citta:hover .overlay {
@@ -122,4 +124,26 @@ h3 {
 
 .scheda_citta:hover h3 {
     color: #f2f2f2;
+}
+
+/* stilizzazione vh_vw */
+
+#vh_vw {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2017%2F03%2F29%2F487157-airplane-Boeing-photography.jpg&f=1&nofb=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    position: relative;
+}
+
+.overlay_big {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+
 }
