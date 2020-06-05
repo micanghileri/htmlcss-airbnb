@@ -55,8 +55,10 @@ ul li {
 #area_schede {
     text-align: center;
     width: 100vw;
-    height: 100vh;
-    padding-top: 100px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    position: relative;
+    background-color: white;
 }
 
 /* titolo */
@@ -128,6 +130,10 @@ h3 {
 
 /* stilizzazione vh_vw */
 
+#area_2 {
+    position: relative;
+}
+
 #vh_vw {
     width: 100vw;
     height: 100vh;
@@ -138,6 +144,18 @@ h3 {
     position: relative;
 }
 
+#scritta_immagine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    z-index: 3;
+
+}
+
 .overlay_big {
     position: absolute;
     top: 0;
@@ -145,5 +163,18 @@ h3 {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
+}
 
+/* Footer */
+
+footer {
+    background-color: white;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#logo_footer img {
+    width: 100px;
 }
