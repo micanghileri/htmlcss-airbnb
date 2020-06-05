@@ -8,7 +8,7 @@
 header {
     height: 90px;
     width: 100vw;
-    background-color: #efefef;
+    background-color: #F6F5F5;
     position: fixed;
     top: 0;
     text-align: center;
@@ -29,5 +29,13 @@ ul li {
     padding-right: 20px;
     font-size: 25px;
     color: black;
-    line-height: 90px;
+    line-height: 86px;
+}
+
+.active_now {
+    border-bottom: 4px solid red;
+}
+
+li:hover .active {
+    border-bottom: 4px solid lightgrey;
 }
